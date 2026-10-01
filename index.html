@@ -193,7 +193,7 @@ select option{background:#2a1f18;color:#f3ebdd}
       </div>
       <div style="margin-top:auto;display:flex;flex-direction:column;gap:18px">
         <div style="display:flex;align-items:baseline;gap:8px;border-top:1px solid rgba(201,173,124,0.22);padding-top:18px"><span style="font-family:'Cormorant Garamond',serif;font-size:40px;color:#e2c894;line-height:1">NT$630</span><span style="font-size:13px;color:#d9cdbb">／盒 8 入</span></div>
-        <button onClick="{{ addCombo }}" style="background:#c9ad7c;color:#1b130f;border:none;padding:14px;font-size:14px;letter-spacing:0.2em;font-weight:500;cursor:pointer;border-radius:2px" style-hover="background:#e2c894">{{ addLabel }}</button>
+        <button onClick="{{ addCombo }}" style="opacity:{{ boxBtnOpacity }};background:#c9ad7c;color:#1b130f;border:none;padding:14px;font-size:14px;letter-spacing:0.2em;font-weight:500;cursor:pointer;border-radius:2px" style-hover="background:#e2c894">{{ addLabel }}</button>
       </div>
     </div>
     <div style="background:#2a1f18;border:1px solid rgba(201,173,124,0.18);padding:36px 28px 28px;display:flex;flex-direction:column;gap:20px;border-radius:2px">
@@ -204,7 +204,7 @@ select option{background:#2a1f18;color:#f3ebdd}
       </div>
       <div style="margin-top:auto;display:flex;flex-direction:column;gap:18px">
         <div style="display:flex;align-items:baseline;gap:8px;border-top:1px solid rgba(201,173,124,0.22);padding-top:18px"><span style="font-family:'Cormorant Garamond',serif;font-size:40px;color:#e2c894;line-height:1">NT$630</span><span style="font-size:13px;color:#d9cdbb">／盒</span></div>
-        <button onClick="{{ addOolong }}" style="background:transparent;color:#e2c894;border:1px solid rgba(201,173,124,0.6);padding:13px;font-size:14px;letter-spacing:0.2em;cursor:pointer;border-radius:2px" style-hover="border-color:#e2c894;color:#f3ebdd">{{ addLabel }}</button>
+        <button onClick="{{ addOolong }}" style="opacity:{{ boxBtnOpacity }};background:transparent;color:#e2c894;border:1px solid rgba(201,173,124,0.6);padding:13px;font-size:14px;letter-spacing:0.2em;cursor:pointer;border-radius:2px" style-hover="border-color:#e2c894;color:#f3ebdd">{{ addLabel }}</button>
       </div>
     </div>
     <div style="background:#2a1f18;border:1px solid rgba(201,173,124,0.18);padding:36px 28px 28px;display:flex;flex-direction:column;gap:20px;border-radius:2px">
@@ -215,7 +215,7 @@ select option{background:#2a1f18;color:#f3ebdd}
       </div>
       <div style="margin-top:auto;display:flex;flex-direction:column;gap:18px">
         <div style="display:flex;align-items:baseline;gap:8px;border-top:1px solid rgba(201,173,124,0.22);padding-top:18px"><span style="font-family:'Cormorant Garamond',serif;font-size:40px;color:#e2c894;line-height:1">NT$630</span><span style="font-size:13px;color:#d9cdbb">／盒</span></div>
-        <button onClick="{{ addPine }}" style="background:transparent;color:#e2c894;border:1px solid rgba(201,173,124,0.6);padding:13px;font-size:14px;letter-spacing:0.2em;cursor:pointer;border-radius:2px" style-hover="border-color:#e2c894;color:#f3ebdd">{{ addLabel }}</button>
+        <button onClick="{{ addPine }}" style="opacity:{{ boxBtnOpacity }};background:transparent;color:#e2c894;border:1px solid rgba(201,173,124,0.6);padding:13px;font-size:14px;letter-spacing:0.2em;cursor:pointer;border-radius:2px" style-hover="border-color:#e2c894;color:#f3ebdd">{{ addLabel }}</button>
       </div>
     </div>
     <div style="background:#2a1f18;border:1px solid rgba(201,173,124,0.18);padding:36px 28px 28px;display:flex;flex-direction:column;gap:20px;border-radius:2px">
@@ -226,7 +226,7 @@ select option{background:#2a1f18;color:#f3ebdd}
       </div>
       <div style="margin-top:auto;display:flex;flex-direction:column;gap:18px">
         <div style="display:flex;align-items:baseline;gap:8px;border-top:1px solid rgba(201,173,124,0.22);padding-top:18px"><span style="font-family:'Cormorant Garamond',serif;font-size:40px;color:#e2c894;line-height:1">NT$75</span><span style="font-size:13px;color:#d9cdbb">／顆</span></div>
-        <button onClick="{{ addLoose }}" style="background:transparent;color:#e2c894;border:1px solid rgba(201,173,124,0.6);padding:13px;font-size:14px;letter-spacing:0.2em;cursor:pointer;border-radius:2px" style-hover="border-color:#e2c894;color:#f3ebdd">{{ addLabel }}</button>
+        <button onClick="{{ addLoose }}" style="background:transparent;color:#e2c894;border:1px solid rgba(201,173,124,0.6);padding:13px;font-size:14px;letter-spacing:0.2em;cursor:pointer;border-radius:2px" style-hover="border-color:#e2c894;color:#f3ebdd">{{ looseAddLabel }}</button>
       </div>
     </div>
   </div>
@@ -241,7 +241,7 @@ select option{background:#2a1f18;color:#f3ebdd}
         <span>滿 20 盒 <span style="color:#e2c894">直接多送 1 盒</span><span style="color:#d9cdbb;font-size:13px">（老闆加碼）</span></span>
       </div>
     </div>
-    <button onClick="{{ openOrder }}" style="background:transparent;color:#e2c894;border:1px solid rgba(201,173,124,0.6);padding:12px 28px;font-size:14px;letter-spacing:0.2em;cursor:pointer;border-radius:2px" style-hover="border-color:#e2c894;color:#f3ebdd">團購預購</button>
+    <button onClick="{{ openGroup }}" style="opacity:{{ boxBtnOpacity }};background:transparent;color:#e2c894;border:1px solid rgba(201,173,124,0.6);padding:12px 28px;font-size:14px;letter-spacing:0.2em;cursor:pointer;border-radius:2px" style-hover="border-color:#e2c894;color:#f3ebdd">{{ groupLabel }}</button>
   </div>
 </section>
 
@@ -400,7 +400,7 @@ select option{background:#2a1f18;color:#f3ebdd}
                 <div style="display:flex;align-items:center;border:1px solid rgba(201,173,124,0.35);border-radius:2px;flex-shrink:0">
                   <button onClick="{{ p.dec }}" style="width:44px;height:44px;background:transparent;border:none;color:#e2c894;font-size:18px;cursor:pointer;opacity:{{ p.decOpacity }}">−</button>
                   <span style="width:36px;text-align:center;font-family:'Jost',sans-serif;font-size:16px">{{ p.qty }}</span>
-                  <button onClick="{{ p.inc }}" style="width:44px;height:44px;background:transparent;border:none;color:#e2c894;font-size:18px;cursor:pointer">＋</button>
+                  <button onClick="{{ p.inc }}" style="width:44px;height:44px;background:transparent;border:none;color:#e2c894;font-size:18px;cursor:pointer;opacity:{{ p.incOpacity }}">＋</button>
                 </div>
               </div>
             </sc-for>
@@ -416,7 +416,7 @@ select option{background:#2a1f18;color:#f3ebdd}
                 <div style="display:flex;align-items:center;border:1px solid rgba(201,173,124,0.35);border-radius:2px;flex-shrink:0">
                   <button onClick="{{ p.dec }}" style="width:44px;height:44px;background:transparent;border:none;color:#e2c894;font-size:18px;cursor:pointer;opacity:{{ p.decOpacity }}">−</button>
                   <span style="width:36px;text-align:center;font-family:'Jost',sans-serif;font-size:16px">{{ p.qty }}</span>
-                  <button onClick="{{ p.inc }}" style="width:44px;height:44px;background:transparent;border:none;color:#e2c894;font-size:18px;cursor:pointer">＋</button>
+                  <button onClick="{{ p.inc }}" style="width:44px;height:44px;background:transparent;border:none;color:#e2c894;font-size:18px;cursor:pointer;opacity:{{ p.incOpacity }}">＋</button>
                 </div>
               </div>
             </sc-for>
@@ -519,6 +519,8 @@ select option{background:#2a1f18;color:#f3ebdd}
 const API = 'https://script.google.com/macros/s/AKfycbw9Cet1lxgKHJo4sPD9No36P-GfqJboYNETZFaIXbyPsL62-9FWzbv37bJ6lPWmzfjYnQ/exec';
 const ROUND = 'encore-2026-10';
 const BOX_KEYS = ['combo', 'oolong', 'pine'];
+// 禮盒暫停販售（散裝照常開放）。要重新開放禮盒，改成 false 即可
+const BOXES_CLOSED = true;
 const PICKUP_TEXT = { p9: '門市自取 10/9（五）13:00–17:00', p10: '門市自取 10/10（六）13:00–17:00', ship: '宅配寄出 10/13–14（黑貓常溫）' };
 const ITEM_NAMES = { combo: '綜合禮盒', oolong: '紅烏龍禮盒', pine: '柚香鳳梨禮盒', lo: '散裝紅烏龍', lp: '散裝柚香鳳梨' };
 
@@ -558,6 +560,7 @@ class Component extends DCLogic {
   resetForm() { return { open: false, step: 1, qty: { combo: 0, oolong: 0, pine: 0, lo: 0, lp: 0 }, name: '', phone: '', addr: '', note: '', pickup: '', tried: false }; }
   componentDidUpdate() { if (this._lastOpen !== this.state.open) { this._lastOpen = this.state.open; document.body.style.overflow = this.state.open ? 'hidden' : ''; } }
   setQty(k, d) { this.setState(s => {
+    if (BOXES_CLOSED && BOX_KEYS.indexOf(k) !== -1 && d > 0) return {};
     const next = Math.max(0, Math.min(99, s.qty[k] + d));
     if (BOX_KEYS.indexOf(k) !== -1 && d > 0 && s.remaining !== null) {
       const others = BOX_KEYS.filter(x => x !== k).reduce((a, x) => a + s.qty[x], 0);
@@ -565,7 +568,7 @@ class Component extends DCLogic {
     }
     return { qty: { ...s.qty, [k]: next } };
   }); }
-  openWith(k) { if (this.state.remaining !== null && this.state.remaining <= 0) return; this.setState(s => ({ open: true, step: s.step === 3 ? 1 : s.step, qty: k && s.qty[k] === 0 ? { ...s.qty, [k]: 1 } : s.qty })); }
+  openWith(k) { const isBox = k && BOX_KEYS.indexOf(k) !== -1; if (BOXES_CLOSED ? isBox : (this.state.remaining !== null && this.state.remaining <= 0)) return; this.setState(s => ({ open: true, step: s.step === 3 ? 1 : s.step, qty: k && s.qty[k] === 0 ? { ...s.qty, [k]: 1 } : s.qty })); }
   renderVals() {
     const s = this.state, q = s.qty;
     const fmt = n => '$' + n.toLocaleString('en-US');
@@ -587,7 +590,8 @@ class Component extends DCLogic {
     const overStock = rem !== null && boxes > rem;
     const canNext = boxes + loose > 0 && !!s.pickup && !!s.name.trim() && phoneOk && (!isShip || !!s.addr.trim()) && !overStock;
     const hintText = boxes + loose === 0 ? '請先選擇商品' : !s.pickup ? '請選擇取貨方式' : overStock ? '禮盒目前剩餘 ' + rem + ' 盒，請調整數量' : !s.name.trim() ? '請填寫姓名' : !phoneOk ? '電話格式請確認（例：0912345678）' : (isShip && !s.addr.trim()) ? '選擇宅配時請填寫收件地址' : '';
-    const mk = (k, name, sub, price) => ({ name, sub, price: fmt(price), qty: q[k], inc: () => this.setQty(k, 1), dec: () => this.setQty(k, -1), decOpacity: q[k] ? 1 : 0.35 });
+    const boxOff = (k) => BOXES_CLOSED && BOX_KEYS.indexOf(k) !== -1;
+    const mk = (k, name, sub, price) => ({ name, sub: boxOff(k) ? '已完售' : sub, price: fmt(price), qty: q[k], inc: () => this.setQty(k, 1), dec: () => this.setQty(k, -1), decOpacity: q[k] ? 1 : 0.35, incOpacity: boxOff(k) ? 0.35 : 1 });
     const labels = ['填寫資料', '選擇付款', '完成'];
     const faqData = [
       ['這次和中秋的一樣嗎？', '一樣。同樣的配方、同樣的禮盒，紅烏龍桂花麻糬與柚香金萱土鳳梨兩款招牌口味都有，限量 70 盒。'],
@@ -602,15 +606,19 @@ class Component extends DCLogic {
     ];
     return {
       stock: stockN,
-      stockText: soldOut ? '已完售，感謝支持' : '剩餘 ' + stockN + ' 盒 · 售完不補',
-      stockTextShort: soldOut ? '已完售' : '剩餘 ' + stockN + ' 盒 · $630 起',
-      ctaLabel: soldOut ? '已完售' : '立即預購',
-      addLabel: soldOut ? '已完售' : '加入預購',
+      stockText: BOXES_CLOSED ? '禮盒已完售 · 散裝單顆開放預購' : soldOut ? '已完售，感謝支持' : '剩餘 ' + stockN + ' 盒 · 售完不補',
+      stockTextShort: BOXES_CLOSED ? '禮盒已完售 · 散裝 $75／顆' : soldOut ? '已完售' : '剩餘 ' + stockN + ' 盒 · $630 起',
+      ctaLabel: BOXES_CLOSED ? '預購散裝' : soldOut ? '已完售' : '立即預購',
+      addLabel: BOXES_CLOSED || soldOut ? '已完售' : '加入預購',
+      looseAddLabel: !BOXES_CLOSED && soldOut ? '已完售' : '加入預購',
+      boxBtnOpacity: BOXES_CLOSED || soldOut ? 0.45 : 1,
       hintText,
       navDisplay: s.w >= 760 ? 'flex' : 'none',
       showBar: s.w < 760 && (this.props.showMobileBar ?? true) && !s.open,
       modalOpen: s.open,
       openOrder: () => this.openWith(null),
+      openGroup: () => { if (!BOXES_CLOSED) this.openWith(null); },
+      groupLabel: BOXES_CLOSED ? '已完售' : '團購預購',
       addCombo: () => this.openWith('combo'),
       addOolong: () => this.openWith('oolong'),
       addPine: () => this.openWith('pine'),
